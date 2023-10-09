@@ -1,0 +1,64 @@
+@use 'base/variables' as vs;
+@use 'base/mixins' as ms;
+
+.gallery{
+    padding: 5rem 0;
+
+    h3{
+        text-align: center;
+    }
+}
+
+.images-gallery{
+    @include ms.reset-list;
+    @include ms.grid(2, 2rem);
+
+    @include ms.tablet{
+        @include ms.grid(3, 2rem);
+    }
+
+    @include ms.desktop{
+        @include ms.grid(6, 2rem);
+    }
+
+    @include ms.desktopXL{
+        @include ms.grid(6, 2rem);
+    }  
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+    background-color: rgb(0 0 0 / .5);
+    z-index: 2;
+
+    picture{
+        display: block;
+        max-width: 90%;
+        
+    }
+}
+
+.btn-close{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: vs.$white;
+
+    display: grid;
+    place-items: center;
+    color: vs.$black;
+    font-weight: 700;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

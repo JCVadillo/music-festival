@@ -1,0 +1,13 @@
+@use 'base/variables' as vs;
+@use 'base/mixins' as ms;
+
+.site-footer{
+    background-color: vs.$pink;
+    padding: 1rem;
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+        color: vs.$white;
+    }
+}

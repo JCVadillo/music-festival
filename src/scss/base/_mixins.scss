@@ -1,0 +1,61 @@
+@use 'variables' as vs;
+// @mixin heading {
+//     text-transform: uppercase;
+//     font-size: 2.4rem;
+//     color: black;
+//     letter-spacing: 1rem;
+// }
+
+// @mixin heading($color: black, $border-radius: false ){
+//     text-transform: uppercase;
+//     font-size: 2.4rem;
+//     color: $color;
+//     letter-spacing: 1rem;
+
+//     @if $border-radius{
+//         border-radius: 1rem;
+//     }
+
+// }
+
+// Mixin for MQ
+
+// Tobile
+@mixin mobile{
+    @media (min-width: vs.$mobile){
+        @content;
+    }
+}
+
+// Tablet
+@mixin tablet{
+    @media (min-width: vs.$tablet){
+        @content;
+    }
+}
+
+// Desktop
+@mixin desktop{
+    @media (min-width: vs.$desktop){
+        @content;
+    }
+}
+
+// DesktopXL
+@mixin desktopXL{
+    @media (min-width: vs.$desktopXL){
+        @content;
+    }
+}
+
+@mixin grid($columns, $gap){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin reset-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

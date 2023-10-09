@@ -1,0 +1,33 @@
+@use 'base/variables' as vs;
+@use 'base/mixins' as ms;
+
+.about-fest{
+    /* Diving in two column 
+    one for the image and one for the 
+    fest content */
+    padding: 5rem 0;
+
+    @include ms.tablet {
+        @include ms.grid(2,5rem);
+    }
+}
+
+.fest-content{
+    /* centerign the right side */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 5rem;
+    @include ms.tablet {
+        margin-top: 0;
+    }
+
+    h2{
+        margin-bottom: 2rem;
+    }
+    .date{
+        color: vs.$pink;
+        font-weight: 700;
+    }
+}
