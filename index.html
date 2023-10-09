@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock & EDM Festival</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="build/css/app.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container content-header">
+                <h1>Rock & EDM Fest</h1>
+
+                <nav class="main-nav">
+                    <a href="#lineup">Line Up</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#tickets">Tickets</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="video">
+            <div class="overlay">
+                <div class="container content-video">
+                    <h2>Rock & EDM Fest</h2>
+                    <p> Summer 2024, Heidenau in Sa., Germanny</p>
+                </div>
+            </div> <!-- .overlay-->
+            <video autoplay muted loop>
+                <source src="video/concierto.mp4" type="video/mp4">
+                <source src="video/concierto.ogg" type="video/ogg">
+                <source src="video/concierto.webm" type="video/webm">
+            </video>
+        </div> <!-- .video -->
+
+        <section class="container about-fest">
+            <div class="image">
+                <picture>
+                    <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                    <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+
+                    <!-- Image fallback -->
+                    <img loading="lazy" src="build/img/imagen_vocalista.jpg" alt="Image of vocalist" width="200" height="300">
+                </picture>
+
+            </div>
+            <div class="fest-content">
+                <h2>Rock & EDM Fest</h2>
+                <p class="date">Summer 2024, Heidenau in Sa., Germanny</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia cupiditate est nulla quo quasi a voluptatibus
+                    quaerat recusandae neque beatae. Repudiandae distinctio
+                    rerum deleniti unde corporis sint ipsum recusandae atque!
+                </p>
+            </div>
+        </section>
+
+        <section id="lineup" class="lineup">
+            <h3>Line Up</h3>
+            <p class="day">Friday 21</p>
+            <div class="stages-container container">
+                <div class="stage rock bg-yellow">
+
+                    <p class="stage-name">Rock Stage</p>
+
+                    <ul class="schedule">
+                        <li>
+                            24:00 | <span>Metallica</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Pearl Jam</span>
+                        </li>
+                        <li>
+                            20:00 | <span>KoRn</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Muse</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Breaking Benjamin</span>
+                        </li>
+                        <li>
+                            17:00 | <span>30 Seconds to Mars</span>
+                        </li>
+                    </ul>
+                </div> <!-- .stage -->
+
+                <div class="stage edm bg-green">
+                    
+                    <p class="stage-name">EDM Stage</p>
+                    
+                    <ul class="schedule">
+                        <li>
+                            24:00 | <span>Deadmau5</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Tïesto</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Hardwell</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Dash Berlin</span>
+                        </li>
+                        
+                        <li>
+                            18:00 | <span>Fedde Legrand</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Audien</span>
+                        </li>
+                    </ul>
+                </div> <!-- .stage -->
+            </div> <!-- .stages-container -->
+
+            <p class="day">Saturday 22</p>
+            <div class="stages-container container">
+                <div class="stage rock bg-green">
+
+                    <p class="stage-name">Rock Stage</p>
+
+                    <ul class="schedule">
+                        <li>
+                            24:00 | <span>Red Hot Chili Peppers</span>
+                        </li>
+                        <li>
+                            22:00 | <span>The Killers</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Deftones</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Limp Bizkit</span>
+                        </li>
+                        
+                        <li>
+                            18:00 | <span>Papa Roach</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Lamb of God</span>
+                        </li>
+                    </ul>
+                </div> <!-- .stage -->
+
+                <div class="stage edm bg-yellow">
+                    
+                    <p class="stage-name">EDM Stage</p>
+                    
+                    <ul class="schedule">
+                        <li>
+                            24:00 | <span>Paul Van Dyk</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Armin Van Buuren</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Above & Beyond</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Eric Prdyz</span>
+                        </li>
+                        
+                        <li>
+                            18:00 | <span>Ferry Corsten</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Vini Vici</span>
+                        </li>
+                    </ul>
+                </div> <!-- .stage -->
+            </div> <!-- .stages-container -->
+        </section>
+
+        <section id="gallery" class="gallery container">
+            <h3>Gallery</h3>
+
+            <ul class="images-gallery"></ul>
+
+        </section>
+
+        <section id="tickets" class="tickets bg-green">
+            <h3>Tickets</h3>
+
+            <div class="container tickets-container">
+
+                <div class="ticket basic">
+                    <p class="name-pass">1 Day Ticket</p>
+
+                    <header class="ticket-header">
+                        <p>Includes</p>
+                    </header>
+                    <div class="ticket-body">
+                        <ul>
+                            <li>Access to both Stages</li>
+                            <li>Food and Drinks</li>
+                        </ul>
+                    </div>
+                    <footer class="ticket-footer">
+                        <p> $100 </p>
+                    </footer>
+                </div> <!-- .ticke. basic -->
+
+                <div class="ticket premium">
+                    <p class="name-pass">2 Days Ticket</p>
+
+                    <header class="ticket-header">
+                        <p>Includes</p>
+                    </header>
+                    <div class="ticket-body">
+                        <ul>
+                            <li>Access to both Stages</li>
+                            <li>Food and Drinks</li>
+                            <li>Official Event T-Shirt</li>
+                            <li>VIP Access</li>
+                        </ul>
+                    </div>
+                    <footer class="ticket-footer">
+                        <p> $180 </p>
+                    </footer>
+                </div> <!-- .ticket .premiun-->
+            </div> <!-- .tickets-container -->
+        </section>
+
+        <footer class="site-footer">
+            <p>
+                Rock & EDM Fest. All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="build/js/app.js"></script>
+    </body>
+</html>
